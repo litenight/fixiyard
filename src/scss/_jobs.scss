@@ -1,0 +1,13 @@
+.jobs {
+    .job {
+        border-bottom: 1px solid #e2e6ea;
+
+        .delivery-date {
+            font-weight: bold;
+        }
+
+        .description {
+            color: #777;
+        }
+    }
+}

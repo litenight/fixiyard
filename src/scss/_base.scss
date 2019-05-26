@@ -1,0 +1,78 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $headings-font-family;
+    font-weight: 300;
+}
+
+html, body {
+    font-size: 13px;
+    height: 100%;
+}
+
+nav {
+    min-height: 40px;
+
+    .nav-item {
+        text-align: center;
+
+        .nav-link {
+            color: #8ea0ac;
+            position: relative;
+            text-shadow: 0 1px 1px #000000aa;
+            transition: all 0.3s;
+
+            &:hover, &.active {
+                color: #ecf2f7;
+                text-shadow: 0 0 20px #ffffff44;
+            }
+
+            i.mic {
+                display: block;
+            }
+        }
+    }
+}
+
+main {
+    padding: 2rem 4rem 2rem 2rem; 
+}
+
+// Small and extra small devices
+@media (max-width: 768px) {
+    nav {
+        .nav-item {
+            &.my-4 {
+                margin-bottom: 0.5rem !important;
+                margin-top: 0.5rem !important;
+            }
+        }
+    }
+}
+
+// Medium size devices and up
+
+@media (min-width: 768px) {
+    nav {
+        height: 100%;
+
+        .nav-item {
+            .nav-link {
+                /*&:hover::after, &.active::after {
+                    background: #fff;
+                    content: "";
+                    display: block;
+                    height: 20px;
+                    position: absolute;
+                    right: -10px;
+                    top: 50%;
+                    width: 20px;
+                    margin-top: -10px;
+                    transform: rotate(45deg);
+                }*/
+
+                i.mic {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}

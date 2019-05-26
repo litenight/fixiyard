@@ -1,0 +1,82 @@
+.dark {
+    background: linear-gradient(135deg, #304050 20%, #203040 80%);
+
+    h1 {
+        text-shadow: 0 1px 2px #000000;
+    }
+
+    input, .form-control, button, .btn, .vc-border-gray-400 {
+        border-color: #000000aa;
+        box-shadow: 0 4px 20px #0008;
+    }
+
+    legend {
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .close {
+        border-radius: 16px;
+        color: #ffffff;
+        height: 32px;
+        text-shadow: none;
+        width: 32px;
+    }
+}
+
+// User
+.user {
+    display: flex;
+    flex-wrap: nowrap;
+
+    > div {
+        flex: 1 1 auto;
+    }
+
+    .avatar {
+        flex: 0 0 60px;
+
+        .initials {
+            background: #555555;
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 1.4rem;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            width: 48px;
+        }
+    }
+
+    .details {
+
+    }
+}
+
+.avatar {
+    max-width: 104px;
+
+    .icon {
+        background: #ffffff22;
+        border-radius: 50%;
+        height: 104px;
+        text-align: center;
+        width: 104px;
+
+        i {
+            color: #ffffff;
+            font-size: 3rem;
+            line-height: 8rem;
+        }
+    }
+}
+
+// Small and extra small devices
+@media (max-width: 768px) {
+    .user {
+        .avatar {
+
+        }
+    }
+}

@@ -1,0 +1,15 @@
+input, select, textarea {
+    &.form-control {
+        border-radius: 19px;
+        padding: 1.5rem 1rem;
+    }
+}
+
+textarea.form-control {
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
