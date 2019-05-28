@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "revision": "3be5641e0ce5a7f4977402238ee50efc"
   },
   {
-    "url": "/hoodie/client.js",
+    "url": "js/app.js",
     "revision": "6bf44622268f7a4c8ece39188f32fe8b"
   }
 ].concat(self.__precacheManifest || []);
