@@ -3,7 +3,7 @@
     <overlay-trigger css-class="btn-success" target="job-overlay">New Job</overlay-trigger>
 
     <div class="jobs mt-5">
-      <b-row class="job mb-4 py-4" v-for="job in jobs">
+      <b-row class="job mb-4 py-4" v-for="job in jobs" :key="job.id">
         <b-col md="6" lg="3">
           <div class="user mb-3">
             <div class="avatar">

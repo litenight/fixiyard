@@ -105,14 +105,15 @@ export default {
       })
     }
   },
-  mounted() {
+  created() {
     hoodie.account.get('session').then(session => {
       if (!session || session.invalid) {
         this.showSignIn()
       } else {
         hoodie.account.get('username').then(username => {
+          console.log(username);
           this.signedIn(username)
-        })
+        }).catch(this.showSignIn)
         this.showHome()
       }
     })
