@@ -1,4 +1,3 @@
-import dotenv/config from 'dotenv'
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import Toasted from 'vue-toasted'
@@ -11,7 +10,9 @@ import App from './App.vue'
 import router from './router'
 
 window.hoodie = new Hoodie({
-  url: process.env.SERVER_URL,
+  url: process.env.NODE_ENV == 'production' ?
+    process.env.MIX_PRODUCTION_SERVER_URL :
+    process.env.MIX_LOCAL_SERVER_URL,
   PouchDB: PouchDB
 })
 

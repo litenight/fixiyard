@@ -8,11 +8,14 @@ module.exports = (env, argv) => ({
   mode: argv && argv.mode || 'development',
   devtool: (argv && argv.mode || 'development') == 'production' ? 'source-map' : 'eval',
   entry: './src/app.js',
+  target: 'node',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: '[name].js'
   },
-  node: false,
+  node: {
+      fs: 'empty'
+  },
   module: {
     rules: [
       {

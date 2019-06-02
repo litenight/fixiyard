@@ -1,5 +1,11 @@
 let mix = require('laravel-mix');
+require('dotenv').config();
 
+mix.webpackConfig({
+    node: {
+        fs: 'empty'
+    }
+});
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
