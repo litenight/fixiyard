@@ -1,3 +1,4 @@
+import dotenv/config from 'dotenv'
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import Toasted from 'vue-toasted'
@@ -10,8 +11,7 @@ import App from './App.vue'
 import router from './router'
 
 window.hoodie = new Hoodie({
-  url: 'http://app.fixiyard.com:8080',
-  // url: 'http://localhost:8080',
+  url: process.env.SERVER_URL,
   PouchDB: PouchDB
 })
 
