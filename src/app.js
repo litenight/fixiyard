@@ -10,7 +10,8 @@ import App from './App.vue'
 import router from './router'
 
 window.hoodie = new Hoodie({
-  url: 'https://litenight.github.io/fixiyard',
+  url: 'https://fixiyard.com:8080',
+  // url: 'http://localhost:8080',
   PouchDB: PouchDB
 })
 

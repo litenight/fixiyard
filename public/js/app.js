@@ -78036,7 +78036,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.hoodie = new _hoodie_client__WEBPACK_IMPORTED_MODULE_5___default.a({
-  url: 'https://litenight.github.io/fixiyard',
+  url: 'https://fixiyard.com:8080',
+  // url: 'http://localhost:8080',
   PouchDB: pouchdb__WEBPACK_IMPORTED_MODULE_4__["default"]
 });
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.prototype.$events = new vue__WEBPACK_IMPORTED_MODULE_0___default.a();
