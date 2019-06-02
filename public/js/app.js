@@ -78036,7 +78036,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.hoodie = new _hoodie_client__WEBPACK_IMPORTED_MODULE_5___default.a({
-  url: 'http://fixiyard.com',
+  url: 'http://app.fixiyard.com:8080',
   // url: 'http://localhost:8080',
   PouchDB: pouchdb__WEBPACK_IMPORTED_MODULE_4__["default"]
 });

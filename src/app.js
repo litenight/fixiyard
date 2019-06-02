@@ -10,7 +10,7 @@ import App from './App.vue'
 import router from './router'
 
 window.hoodie = new Hoodie({
-  url: 'http://fixiyard.com',
+  url: 'http://app.fixiyard.com:8080',
   // url: 'http://localhost:8080',
   PouchDB: PouchDB
 })
