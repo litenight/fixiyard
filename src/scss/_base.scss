@@ -33,7 +33,15 @@ nav {
 }
 
 main {
-    padding: 2rem 4rem 2rem 2rem; 
+    padding: 2rem 4rem 2rem 2rem;
+}
+
+.auth {
+    background: #e6e6e6;
+    
+    main {
+        padding: 2rem;
+    }
 }
 
 // Small and extra small devices

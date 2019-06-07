@@ -1,0 +1,32 @@
+.card {
+    &.auth-card {
+        background-color: #112233;
+        border-radius: 20px;
+        color: #eeeeee;
+        max-width: 400px;
+        min-width: 250px;
+
+        a {
+            color: $gray-500;
+        }
+
+        h1 {
+            color: #789;
+            text-shadow: 0 -1px 0 #000000;
+        }
+
+        hr {
+            border-color: #223344;
+            box-shadow: 0 -1px 0 #00000066;
+            margin: 2rem 0;
+        }
+
+        .card-body {
+            padding: 2.5rem;
+
+            .form-control {
+                border-color: #112;
+            }
+        }
+    }
+}
