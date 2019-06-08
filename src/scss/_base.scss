@@ -37,8 +37,6 @@ main {
 }
 
 .auth {
-    background: #e6e6e6;
-    
     main {
         padding: 2rem;
     }
@@ -46,11 +44,27 @@ main {
 
 // Small and extra small devices
 @media (max-width: 768px) {
+    body {
+        &.guest {
+            background-color: #112233;
+        }
+    }
+
     nav {
         .nav-item {
             &.my-4 {
                 margin-bottom: 0.5rem !important;
                 margin-top: 0.5rem !important;
+            }
+        }
+    }
+
+    .auth {
+        main {
+            padding: 0;
+
+            > .container-fluid {
+                padding: 0;
             }
         }
     }

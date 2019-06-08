@@ -25,7 +25,7 @@
       </b-container>
     </b-navbar -->
 
-    <b-row class="h-100">
+    <div :class="(isLoggedIn ? 'row' : 'h-100')">
       <b-col md="2" v-if="isLoggedIn">
         <nav class="dark">
           <b-row>
@@ -40,14 +40,14 @@
           </b-row>
         </nav>
       </b-col>
-      <b-col :md="isLoggedIn ? 10 : 12">
+      <div :class="{'col-md-10': isLoggedIn}">
         <main>
           <b-container fluid>
             <router-view/>
           </b-container>
         </main>
-      </b-col>
-    </b-row>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -84,6 +84,12 @@ export default {
     isLoggedIn: false,
     username: 'Guest'
   }),
+  watch: {
+    isLoggedIn: (status) => {
+      document.body.classList.toggle('user', status)
+      document.body.classList.toggle('guest', !status)
+    }
+  },
   methods: {
     signedIn(username) {
       this.isLoggedIn = true

@@ -1,38 +1,32 @@
 <template>
   <div class="vh-100">
-    <div class="my-5">
-      <img src="icons/icon-128x128.png" alt="logo">
+    <div class="h-100">
+      <b-card class="auth-card m-auto">
+        <div class="mb-5">
+          <img src="images/logo-144.png" alt="logo">
+        </div>
+        <h1>Register</h1>
+        <hr>
+        <b-form @submit="signUp" :novalidate="true" :validated="validated" class="needs-validation">
+          <b-form-group>
+            <b-form-input v-model="username" placeholder="Username" required />
+            <b-form-invalid-feedback>Please enter the username</b-form-invalid-feedback>
+          </b-form-group>
+          <b-form-group>
+            <b-form-input v-model="password" type="password" placeholder="Password" required />
+            <b-form-invalid-feedback>Please enter the password</b-form-invalid-feedback>
+          </b-form-group>
+          <b-form-group>
+            <b-button type="submit" block>Sign Up</b-button>
+          </b-form-group>
+        </b-form>
+        <hr>
+        <div class="small">
+          Have an account?
+          <router-link to="/sign-in" >Sign In</router-link>
+        </div>
+      </b-card>
     </div>
-    <b-row class="h-100">
-      <b-col md="6" offset-md="3" lg="4" offset-lg="4">
-        <b-card class="auth-card m-auto">
-          <h1>Register</h1>
-
-          <hr>
-
-          <b-form @submit="signUp" :novalidate="true" :validated="validated" class="needs-validation">
-            <b-form-group>
-              <b-form-input v-model="username" placeholder="Username" required />
-              <b-form-invalid-feedback>Please enter the username</b-form-invalid-feedback>
-            </b-form-group>
-            <b-form-group>
-              <b-form-input v-model="password" type="password" placeholder="Password" required />
-              <b-form-invalid-feedback>Please enter the password</b-form-invalid-feedback>
-            </b-form-group>
-            <b-form-group>
-              <b-button type="submit">Sign Up</b-button>
-            </b-form-group>
-          </b-form>
-
-          <hr>
-
-          <div class="small">
-            Have an account?
-            <router-link to="/sign-in" >Sign In</router-link>
-          </div>
-        </b-card>
-      </b-col>
-    </b-row>
   </div>
 </template>
 

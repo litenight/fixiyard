@@ -30,3 +30,12 @@
         }
     }
 }
+
+// Small and extra small devices
+@media (max-width: 768px) {
+    .card {
+        &.auth-card {
+            border: none;
+        }
+    }
+}
