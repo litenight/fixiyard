@@ -1,9 +1,21 @@
 <template>
   <div>
-    <overlay-trigger css-class="btn-success" target="job-overlay">New Job</overlay-trigger>
+    <b-row>
+      <b-col cols="8">
+        <h1>Latest Jobs</h1>
+      </b-col>
+      <b-col cols="4" class="text-right">
+        <overlay-trigger css-class="btn-sm btn-success" target="job-overlay">
+          <span class="mic">add</span>
+          <span class="d-none d-md-inline">New Job</span>
+        </overlay-trigger>
+      </b-col>
+    </b-row>
 
-    <div class="jobs mt-5">
-      <b-row class="job mb-4 py-4" v-for="job in jobs" :key="job.id">
+    <hr>
+
+    <div class="jobs mt-md-5">
+      <b-row class="job mb-4 pb-4" v-for="job in jobs" :key="job.id">
         <b-col md="6" lg="3">
           <div class="user mb-3">
             <div class="avatar">

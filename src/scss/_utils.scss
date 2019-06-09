@@ -1,3 +1,5 @@
+[v-cloak] { display: none; }
+
 .dark {
     background: linear-gradient(135deg, #123 20%, #234 80%);
 
@@ -20,6 +22,7 @@
         border-radius: 16px;
         color: #ffffff;
         height: 32px;
+        padding: 4px;
         text-shadow: none;
         width: 32px;
     }

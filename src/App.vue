@@ -25,10 +25,10 @@
       </b-container>
     </b-navbar -->
 
-    <div :class="(isLoggedIn ? 'row' : 'h-100')">
-      <b-col md="2" v-if="isLoggedIn">
+    <div :class="(isLoggedIn ? 'row no-gutters wrapper' : 'h-100')">
+      <b-col md="2" v-if="isLoggedIn" class="sidebar">
         <nav class="dark">
-          <b-row>
+          <b-row class="no-gutters">
             <b-col v-for="(link, index) in links" :key="index" cols="3" md="12">
               <div class="nav-item my-4">
                 <router-link :to="link.to" class="nav-link">

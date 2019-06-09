@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 html, body {
     font-size: 13px;
     height: 100%;
+    min-width: 280px;
 }
 
 nav {
@@ -50,6 +51,10 @@ main {
         }
     }
 
+    h1 {
+        font-size: 2rem;
+    }
+
     nav {
         .nav-item {
             &.my-4 {
@@ -57,6 +62,10 @@ main {
                 margin-top: 0.5rem !important;
             }
         }
+    }
+
+    main {
+        padding: 1rem;
     }
 
     .auth {
@@ -68,11 +77,19 @@ main {
             }
         }
     }
+
+    .sidebar {
+        max-height: 50px;
+    }
 }
 
 // Medium size devices and up
 
 @media (min-width: 768px) {
+    .wrapper {
+        height: 100% !important;
+    }
+
     nav {
         height: 100%;
 
