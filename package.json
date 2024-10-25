@@ -51,7 +51,7 @@
     "material-design-icons": "^3.0.1",
     "pouchdb": "^7.0.0",
     "v-calendar": "^1.0.0-beta.12",
-    "vue": "^2.6.10",
+    "vue": "^3.0.0",
     "vue-router": "^3.0.6",
     "vue-toasted": "^1.1.26"
   }
